@@ -1,0 +1,19 @@
+# Maxfiy ma'lumotlar — hech qachon commit qilinmaydi
+.env
+.env.*
+!.env.example
+*.session
+*.session-journal
+data/
+
+# Qo'lda belgilangan e'lon namunalari (ichida begona odamlarning telefonlari bor)
+reports/data/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+dist/
