@@ -37,6 +37,18 @@ Uchta servis (`docker compose`): **db** (PostgreSQL 16), **collector** (kanallar
 | `src/elon/tools/eval_parser.py` | Parser aniqligini qo'lda belgilangan namunada o'lchash |
 | `config/channels.yaml` | Kanallar ro'yxati |
 
+## Tez yo'l: `./deploy.sh`
+
+Serverda (Docker o'rnatilgan bo'lsa):
+
+```bash
+git clone https://github.com/UmariGroup/elon-topuvchi-bot.git && cd elon-topuvchi-bot
+./deploy.sh        # 1-marta .env yaratadi -> nano .env bilan to'ldiring
+./deploy.sh        # 2-marta: build, Telegram'ga kirish (kod so'raladi), ishga tushirish
+```
+
+Keyingi yangilanishlar: `./deploy.sh` (git pull + qayta ko'tarish). Quyida — xuddi shu qadamlar qo'lda.
+
 ## O'rnatish (toza server)
 
 Kerak: Docker + Docker Compose, **alohida** Telegram akkaunt (shaxsiy raqamingiz emas — pastdagi
