@@ -1,0 +1,29 @@
+# Yig'iladigan Telegram kanallar ro'yxati.
+#
+# HOLATI: boshlang'ich TAKLIF — tasdiqlanmagan. Bu kanallar 2026-11-13 da ochiq veb-manbalardan
+# (t.me/s, TGStat, Telemetr) topildi; har birining hozir faol ekani va e'lon sifati
+# Telegram akkaunt orqali tekshirilmagan. Ishga tushirishdan oldin ko'rib chiqing.
+#
+# Ro'yxatni 30–50 taga yetkazish uchun (collector akkaunti bilan):
+#     docker compose run --rm collector python -m elon.collector.discover
+# Chiqqan qatorlardan mos kelganlarini shu faylga ko'chiring.
+#
+# Maydonlar: username (majburiy), category (standart: rent), enabled (standart: true).
+# Topilmagan yoki yopiq kanalni collector o'zi o'chirib, sababini bazaga yozadi.
+
+channels:
+  # --- egasidan / maklersiz (o'zbek tilida) ---
+  - username: bez_makler_kvartira_arenda_ijara   # ~17 ming a'zo
+  - username: kvartira_bez_posrednika            # ~2.4 ming a'zo
+  - username: bez_maklera                        # yuqoridagi kanallar tarmog'i
+  - username: Iqtisodchi_kvartira                # "Toshkent arzon maklersiz kvartira | TMU"
+  - username: talabalarga_arzon_kvartira_ijara   # talabalar uchun
+  - username: kvartira_toshkent_ijara
+
+  # --- rus tilidagi kanallar (vositachilar ko'p) ---
+  - username: arentash                           # ~17 ming a'zo, #хозяева / #риелтор teglari
+  - username: arendatashkent_uz                  # ~3.3 ming a'zo
+  - username: arendakvartir_uz
+  - username: kvartira_dom_arenda
+  - username: arenda_kvartira_v_tashkente        # kichik, kvartira_dom_arenda ga yo'naltiradi
+  - username: KlyuchiTashkentaArenda             # agentlik kanali
